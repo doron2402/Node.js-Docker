@@ -6,7 +6,7 @@ WORKDIR /var/www
 
 RUN npm install 
 
-ENTRYPOINT ["./scripts/entrypoint.sh"]
+ENTRYPOINT ["/var/www/scripts/entrypoint.sh"]
 
 EXPOSE 3000
 
